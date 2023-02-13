@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="shakepop.css">
+    <script src="shakepop.js"></script>
+</head>
+<body>
+<div class="contain">
+    <h2 class="name">Shake Pop</h2>
+    <p class="expl">Pop all balloons before they reach top or LOSE</p>
+    <canvas id="canvas" width="800" height="600"></canvas>
+  </div>
+  
+  <div class="container_buttons">
+    <div class="row">
+        <div class="col2">&nbsp;</div>
+      <div class="col">
+        <div class="Life" id="health">Life: 5</div>
+      </div>
+      <div class="col">
+        <input type="button" id="start" class="btn btn-primary" value="Start" />
+      </div>
+      <div class="col">
+        <input type="button" id="reset" class="btn btn-warning" value="Reset" />
+      </div>
+      <div class="col">
+        <div class="score" id="scr">Score: 0</div>
+      </div>
+      <div class="col2">&nbsp;</div>
+    </div>
+  </div>
+  <div id="coord"></div>
+</body>
+</html>
