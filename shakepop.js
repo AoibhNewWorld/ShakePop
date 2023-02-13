@@ -1,26 +1,21 @@
 var balloon_1 = new Image();
-balloon_1.src =
-  "https://drive.google.com/uc?export=view&id=18k5T7TclIFHVQ-Qq9_LNGgU9TjU75560";
+balloon_1.src = "balloon.png";
 
 var pop = new Image();
-pop.src =
-  "https://drive.google.com/uc?export=view&id=1eHd9gijpVpyQlRcT2VGy6PihUNJyrY1Y";
+pop.src = "pop.png";
 
 var balloons = [];
 var pops = [];
 var scr = 0;
 
 var popSound = new Audio();
-popSound.src =
-  "https://drive.google.com/uc?export=view&id=1rH5t_MlOncI2iCUpAeOuXC91SBn_uD-Y";
+popSound.src = "popSound.mp3";
 
 var hitSound = new Audio();
-hitSound.src =
-  "https://drive.google.com/uc?export=view&id=1ECmwYDB-lqIcoWtzSZGUZ_8IQa0YpV0I";
+hitSound.src = "hitSound.mp3";
 
 var loseSound = new Audio();
-loseSound.src =
-  "https://drive.google.com/uc?export=view&id=1c4n_K8PFFh4-nl-rBpEoJLpVyZRKWxlj";
+loseSound.src = "loseSound.mp3";
 
 window.addEventListener("load", function (event) {
   var animProp = {
