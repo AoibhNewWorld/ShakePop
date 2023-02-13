@@ -1,7 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html {
+  background-color: black;
+}
+
 .name {
   font-family: "Montserrat", sans-serif;
-  color: #2e2e2e;
+  color: #FFFFFF;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -35,23 +40,26 @@
 #reset {
   padding: 10px;
 }
+
 #start {
   padding: 10px;
 }
+
 .Life {
   font-family: "Montserrat", sans-serif;
-  color: rgba(69, 41, 255, 1);
+  color: #FF0000;
   font-size: 24px;
 }
+
 .score {
   font-family: "Montserrat", sans-serif;
-  color: rgba(31, 209, 0, 1);
+  color: #00FF00;
   font-size: 24px;
 }
 
 .expl {
   font-family: "Montserrat", sans-serif;
-  color: #2e2e2e;
+  color: #FeFeFe;
   margin-top: 5px;
   margin-bottom: 8px;
 }

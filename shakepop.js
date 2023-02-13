@@ -46,7 +46,7 @@ window.addEventListener("load", function (event) {
     balloons = [];
     scr = 0;
     health = 5;
-    document.getElementById("health").innerHTML = "Life: 5";
+    document.getElementById("health").innerHTML = "Health: 5";
     document.getElementById("scr").innerHTML = "Score: 0";
   });
 });
