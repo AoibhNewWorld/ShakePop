@@ -135,7 +135,7 @@ var canvasInit = function (lastTime, animProp, health) {
           hitSound.play();
           health -= 1;
           scr -= 10;
-          healthDOM.innerHTML = "Life: " + health;
+          healthDOM.innerHTML = "Health: " + health;
           scoreDOM.innerHTML = "Score: " + scr;
         }
       }
