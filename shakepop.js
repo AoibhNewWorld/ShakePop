@@ -171,20 +171,22 @@ var canvasInit = function (lastTime, animProp, health) {
   ctx.canvas.addEventListener("mousedown", function (event) {
     mouseX = event.clientX - ctx.canvas.offsetLeft;
     mouseY = event.clientY - ctx.canvas.offsetTop;
-    for (var i = 0; i < balloons.length; i++) {
-      if (
-        mouseY > balloons[i].y &&
-        mouseY < balloons[i].y + 155 &&
-        mouseX > balloons[i].x &&
-        mouseX < balloons[i].x + 95
-      ) {
-        ctx.clearRect(balloons[i].x, balloons[i].y, 95, 155);
-        POP.render(mouseX, mouseY);
-        POP.clear((balloons[i].x + 95) / 2, (balloons[i].y + 155) / 2);
-        popSound.play();
-        balloons.splice(i, 1);
-        scr++;
-        scoreDOM.innerHTML = "Score: " + scr;
+    if (animProp.animate) {
+      for (var i = 0; i < balloons.length; i++) {
+        if (
+          mouseY > balloons[i].y &&
+          mouseY < balloons[i].y + 155 &&
+          mouseX > balloons[i].x &&
+          mouseX < balloons[i].x + 95
+        ) {
+          ctx.clearRect(balloons[i].x, balloons[i].y, 95, 155);
+          POP.render(mouseX, mouseY);
+          POP.clear((balloons[i].x + 95) / 2, (balloons[i].y + 155) / 2);
+          popSound.play();
+          balloons.splice(i, 1);
+          scr++;
+          scoreDOM.innerHTML = "Score: " + scr;
+        }
       }
     }
   });
