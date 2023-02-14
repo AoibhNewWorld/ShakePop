@@ -81,12 +81,10 @@ html {
 .dart {
   visibility: hidden;
   float: right;
-  margin-right: 50px;
 }
 
 .daggers {
   float: left;
-  margin-left: 50px;
 }
 
 #canvas {
