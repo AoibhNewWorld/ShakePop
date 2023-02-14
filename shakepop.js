@@ -23,6 +23,19 @@ window.addEventListener("load", function (event) {
   };
 
   var health = 5;
+
+  document.getElementById("daggers").addEventListener("click", function () {
+    document.getElementById("canvas").style.cursor = "url(daggers-cursor.png),auto";
+    document.getElementById("dart").style.visibility = "visible"
+    document.getElementById("daggers").style.visibility = "hidden"
+  });
+
+  document.getElementById("dart").addEventListener("click", function () {
+    document.getElementById("canvas").style.cursor = "url(cursor.png),auto";
+    document.getElementById("dart").style.visibility = "hidden"
+    document.getElementById("daggers").style.visibility = "visible"
+  });
+
   document.getElementById("start").addEventListener("click", function () {
     if (animProp.animate) {
       document.getElementById("start").value = "Start";
