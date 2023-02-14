@@ -34,27 +34,31 @@ html {
 }
 .col2 {
   float: left;
-  width: 30%;
+  width: 25%;
 }
 
 #reset {
   padding: 10px;
+  float: left;
 }
 
 #start {
   padding: 10px;
+  float: right;
 }
 
 .Life {
   font-family: "Montserrat", sans-serif;
   color: #FF0000;
   font-size: 24px;
+  float: right;
 }
 
 .score {
   font-family: "Montserrat", sans-serif;
   color: #00FF00;
   font-size: 24px;
+  float: left;
 }
 
 .expl {
@@ -78,13 +82,9 @@ html {
   color: "red";
 }
 
-.dart {
-  visibility: hidden;
-  float: right;
-}
-
-.daggers {
-  float: left;
+.cursor {
+  float: center;
+  src: "daggers-cursor.png";
 }
 
 #canvas {

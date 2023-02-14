@@ -24,16 +24,18 @@ window.addEventListener("load", function (event) {
 
   var health = 5;
 
-  document.getElementById("daggers").addEventListener("click", function () {
-    document.getElementById("canvas").style.cursor = "url(daggers-cursor.png),auto";
-    document.getElementById("dart").style.visibility = "visible"
-    document.getElementById("daggers").style.visibility = "hidden"
-  });
-
-  document.getElementById("dart").addEventListener("click", function () {
-    document.getElementById("canvas").style.cursor = "url(cursor.png),auto";
-    document.getElementById("dart").style.visibility = "hidden"
-    document.getElementById("daggers").style.visibility = "visible"
+  var cursor = document.getElementById("cursor")
+  var canvas = document.getElementById("canvas")
+  cursor.addEventListener("click", function () {
+    if (cursor.value == 'daggers') {
+      canvas.style.cursor = "url(cursor.png),auto";
+      cursor.src = "cursor.png"
+      cursor.value = "dart"
+    } else {
+      canvas.style.cursor = "url(daggers-cursor.png),auto";
+      cursor.src = "daggers-cursor.png"
+      cursor.value = "daggers"
+    }
   });
 
   document.getElementById("start").addEventListener("click", function () {
