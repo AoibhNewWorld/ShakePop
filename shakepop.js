@@ -28,11 +28,11 @@ window.addEventListener("load", function (event) {
   var canvas = document.getElementById("canvas")
   cursor.addEventListener("click", function () {
     if (cursor.value == 'daggers') {
-      canvas.style.cursor = "url(cursor.png),auto";
+      canvas.style.cursor = "url(daggers-cursor.png),auto";
       cursor.src = "cursor.png"
       cursor.value = "dart"
     } else {
-      canvas.style.cursor = "url(daggers-cursor.png),auto";
+      canvas.style.cursor = "url(cursor.png),auto";
       cursor.src = "daggers-cursor.png"
       cursor.value = "daggers"
     }
